@@ -9,7 +9,7 @@ print(result)
 
 dicty = {
     "name": "Brandon",
-    "last name": "Aguero"
+    "last name": "Nose"
 }
 
 print(dicty)
