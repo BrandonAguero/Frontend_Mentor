@@ -5,3 +5,11 @@ def welcome(saludo):
 
 result = welcome(saludo=presentation)
 print(result)
+
+
+dicty = {
+    "name": "Brandon",
+    "last name": "Aguero"
+}
+
+print(dicty)
