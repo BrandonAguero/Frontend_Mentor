@@ -8,7 +8,7 @@ print(result)
 
 
 dicty = {
-    "name": "Brandon",
+    "name": "Bruce",
     "last name": "Aguero"
 }
 
