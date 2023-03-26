@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-container {
+  background-color: hsl(30deg, 38%, 92%);
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-container .section {
+  width: 85%;
+  height: 90%;
+  min-width: 27.2rem;
+  max-height: 60rem;
+  border-radius: 2rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.section-container .section figure picture img {
+  width: 100%;
+  height: 24rem;
+}
+
+.section .section_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  text-align: start;
+  margin-top: 4%;
+}
+
+.section .section_article h2 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  color: gray;
+  letter-spacing: 0.5rem;
+  margin-bottom: 4%;
+}
+
+.section .section_article h1 {
+  font-family: "Fraunces";
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 4%;
+}
+
+.section .section_article > p {
+  color: gray;
+  font-size: 1.5rem;
+  margin-bottom: 4%;
+}
+
+.section .section_article div {
+  margin-bottom: 4%;
+}
+
+.section .section_article div p {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 3rem;
+  font-family: "Fraunces";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .section_article div span {
+  color: gray;
+  font-size: 1.5rem;
+  font-family: "Outfit";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 1rem;
+  text-decoration: line-through;
+}
+
+.section .section_article .primary-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+  background: hsl(158deg, 36%, 37%);
+  border: none;
+  border-radius: 1rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section .section_article .primary-button:hover {
+  background-color: hsl(158deg, 75%, 13%);
+}
+
+.section .section_article .primary-button span {
+  background-image: url("./images/icon-cart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 344px) {
+  .section-container .section {
+    height: 55rem;
+  }
+}

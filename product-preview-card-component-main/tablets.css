@@ -1,0 +1,31 @@
+.section-container .section {
+    display: flex;
+    border-radius: 2rem;
+    height: 40rem;
+    width: 55.4rem;
+}
+.section-container .section figure picture img {
+    width: 28rem;
+    height: 100%;
+}
+.section-container .section .section_article {
+    margin-left: 2rem;
+}
+.section-container .section .section_article h2 {
+    margin-bottom: 2rem;
+    width: 90%;
+}
+.section-container .section .section_article h1 {
+    margin-bottom: 2rem;
+    width: 90%;
+}
+.section-container .section .section_article div {
+    margin-bottom: 2rem;
+}
+.section-container .section .section_article > p {
+    margin-bottom: 2rem;
+    width: 90%;
+}
+.section-container .section .section_article .primary-button {
+    width: 90%;
+}
