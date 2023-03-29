@@ -1,12 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html {
   font-size: 62.5%;
 }
-
 .section-container {
   background-color: hsl(30deg, 38%, 92%);
   width: 100%;
@@ -17,10 +11,8 @@ html {
 }
 
 .section-container .section {
-  width: 85%;
-  height: 90%;
-  min-width: 27.2rem;
-  max-height: 60rem;
+  width: 30rem;
+  height: 56rem;
   border-radius: 2rem;
   background-color: white;
   overflow: hidden;
@@ -53,7 +45,7 @@ html {
   font-weight: 500;
   color: gray;
   letter-spacing: 0.5rem;
-  margin-bottom: 4%;
+  margin-bottom: 1.5rem;
 }
 
 .section .section_article h1 {
@@ -61,17 +53,18 @@ html {
   font-weight: bold;
   color: black;
   font-size: 3rem;
-  margin-bottom: 4%;
+  margin-bottom: 1.5rem;
 }
 
 .section .section_article > p {
   color: gray;
   font-size: 1.5rem;
-  margin-bottom: 4%;
+  margin-bottom: 2rem;
+  line-height: 2rem;
 }
 
 .section .section_article div {
-  margin-bottom: 4%;
+  margin-bottom: 2.5rem;
 }
 
 .section .section_article div p {
@@ -90,7 +83,7 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 1rem;
+  margin-left: 3rem;
   text-decoration: line-through;
 }
 
@@ -128,10 +121,4 @@ html {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 2rem;
-}
-
-@media (min-width: 344px) {
-  .section-container .section {
-    height: 55rem;
-  }
 }
