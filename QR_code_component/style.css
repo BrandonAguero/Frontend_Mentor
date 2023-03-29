@@ -4,13 +4,6 @@
     --grayish-blue: hsl(220, 15%, 55%);
     --dark-blue: hsl(218, 44%, 22%);
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -22,15 +15,15 @@ html {
     background-color: var(--light-gray);
 }
 .container-div {
-    width: 26.2rem;
-    height: 44.4rem;
+    width: 26rem;
+    height: 40rem;
     background-color: var(--white);
     border-radius: 1rem;
 }
 .container-div figure {
     width: 90%;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .container-div figure img {
     width: 100%;
@@ -40,7 +33,7 @@ html {
     width: 85%; 
     text-align: center;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 .container-div .first-div h1 {
     color: var(--dark-blue);
@@ -48,6 +41,6 @@ html {
 }
 .container-div .first-div p {
     color: var(--grayish-blue);
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
 }
