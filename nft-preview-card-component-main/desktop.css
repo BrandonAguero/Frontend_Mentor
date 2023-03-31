@@ -1,0 +1,6 @@
+.main_section .main_section-article h1 a:hover {
+    color: var(--primary-cyan);
+}
+.main_section .main_section-article .article-autor a:hover {
+    color: var(--primary-cyan);
+}

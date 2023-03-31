@@ -6,14 +6,8 @@
     --neutral-darkblue-three: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
     font-size: 62.5%;
-    /* font-size: 18px;*/
 }
 body {
     background-color: var(--neutral-darkblue-one);
@@ -43,22 +37,13 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-    position: relative;
-}
-.main_section-figure .second-image {
-    position: absolute;
-    top: calc(50% - 10rem);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-}
-.main_section-figure:hover .second-image {
-    opacity: 1;
-    visibility: visible;
 }
 .main_section .main_section-article {
+    display: flex;
+    flex-direction: column;
     width: 23rem;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 .main_section .main_section-article h1 {
     margin-bottom: 1rem;
@@ -68,9 +53,6 @@ body {
     font-size: 2rem;
     text-decoration: none;
 }
-.main_section .main_section-article h1 a:hover {
-    color: var(--primary-cyan);
-}
 .main_section .main_section-article .article-description {
     color: var(--primary-softblue);
     font-size: 1.3rem;
@@ -78,14 +60,12 @@ body {
     font-weight:lighter;
     margin-bottom: 1rem;
 }
-.main_section .main_section-article > div {
+.main_section .main_section-article .article-dates {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
 }
-.main_section .main_section-article > div p {
+.main_section .main_section-article .article-dates > p {
     display: flex;
-    align-items: center;
 }
 .main_section .main_section-article > div p:first-child {
     color: var(--primary-cyan);
@@ -118,6 +98,8 @@ body {
     height: 0.09rem;
     opacity: 0.9;
     background-color: var(--neutral-darkblue-three);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .main_section .main_section-article .article-autor {
     color: var(--primary-softblue);
@@ -129,9 +111,6 @@ body {
     text-decoration: none;
     color: var(--white);
     margin-left: 1rem;
-}
-.main_section .main_section-article .article-autor a:hover {
-    color: var(--primary-cyan);
 }
 .main_section .main_section-article .article-autor span {
     background-image: url("./images/image-avatar.png");
