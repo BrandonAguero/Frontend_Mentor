@@ -5,6 +5,7 @@
     --neutral-desaturatedblue: hsl(224, 23%, 55%);
     --neutral-darkblue: hsl(223, 47%, 23%);
     --white: #ffffff;
+    --color-hover: #a6a6ff;
 }
 html {
     font-size: 62.5%;
@@ -65,7 +66,7 @@ body {
     padding: 1em;
 }
 .div_main .div_main-section > div span {
-    background-image: url("./images/icon-music.svg");
+    background-image: url("../images/icon-music.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -84,10 +85,10 @@ body {
 .div_main .div_main-section > div div p:last-child {
     color: var(--neutral-desaturatedblue);
 }
-.div_main .div_main-section > div div a {
+.div_main .div_main-section > div a {
     color: var(--primary-brightblue);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .div_main .div_main-section .primary-button {
     background-color: var(--primary-brightblue);

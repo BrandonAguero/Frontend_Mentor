@@ -1,0 +1,13 @@
+.div_main .div_main-section > div a:last-child:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-hover);
+}
+.div_main .div_main-section .primary-button:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+.div_main .div_main-section .secondary-button:hover {
+    color: var(--neutral-darkblue);
+    cursor: pointer;
+}
