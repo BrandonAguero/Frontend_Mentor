@@ -22,13 +22,14 @@ body {
     place-items: center;
 }
 .main__div {
-    width: 90%;
+    width: 70%;
     background-color: var(--primary-darkdesaturated-blue);
     border-radius: 1em;
     overflow: hidden;
 }
 .main .main__div .main__div--figure img {
     width: 100%;
+    object-fit: cover;
 }
 .main .main__div .main__div--section {
     display: flex;
@@ -55,18 +56,18 @@ body {
     margin: 0 auto;
     margin-top: 2rem;
 }
-.main .main__div .main__div--section div {
+.main .main__div .main__div--section > div {
     width: 65%;
     margin: 0 auto;
     margin-top: 2rem;
     text-align: center;
 }
-.main .main__div .main__div--section div .title {
+.main .main__div .main__div--section > div .title {
     color: var(--neutral-white-mainheading);
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
-.main .main__div .main__div--section div .description {
+.main .main__div .main__div--section > div .description {
     color: var(--neutral-whitestat-headings);
     font-size: 1.3rem;
     margin-bottom: 2rem;
