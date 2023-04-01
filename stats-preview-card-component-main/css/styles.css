@@ -1,0 +1,73 @@
+:root {
+    --primary-verydark-blue: hsl(233, 47%, 7%);
+    --primary-darkdesaturated-blue: hsl(244, 38%, 16%);
+    --primary-soft-violetaccent: hsl(277, 64%, 61%);
+    --neutral-white-mainheading: hsl(0, 0%, 100%);
+    --neutral-whitemain-paragraph: hsl(0, 0%, 100%, 0.75);
+    --neutral-whitestat-headings: hsl(0, 0%, 100%, 0.6);
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    background-color: var(--primary-verydark-blue);
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    display: grid;
+    place-items: center;
+}
+.main__div {
+    width: 90%;
+    background-color: var(--primary-darkdesaturated-blue);
+    border-radius: 1em;
+    overflow: hidden;
+}
+.main .main__div .main__div--figure img {
+    width: 100%;
+}
+.main .main__div .main__div--section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.main .main__div .main__div--section h1 {
+    width: 65%;
+    color: var(--neutral-white-mainheading);
+    line-height: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.main .main__div .main__div--section h1 span {
+    color: var(--primary-soft-violetaccent);
+}
+.main .main__div .main__div--section > p {
+    color: var(--neutral-whitemain-paragraph);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.main .main__div .main__div--section div {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+.main .main__div .main__div--section div .title {
+    color: var(--neutral-white-mainheading);
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+.main .main__div .main__div--section div .description {
+    color: var(--neutral-whitestat-headings);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
