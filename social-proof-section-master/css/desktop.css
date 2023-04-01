@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+}
+.header .header__div {
+    width: 30%;
+    text-align: start;
+    margin: 0;
+    margin-top: 7rem;
+    margin-left: 5rem;
+}
+.header .header__div .div--title {
+    font-size: 4rem;
+    line-height: 3rem;
+}
+.header .header__div .div--description {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+}
+.header .header__section {
+    width: 60em;
+    margin-top: 7rem;
+    margin-left: 5rem;
+}
+.header .header__section .header__section--article {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    height: 4em;
+}
+.header .header__section .header__section--article span img {
+    width: 2rem;
+    height: 2rem;
+}
+.header .header__section .header__section--article > div {
+    width: 20em;
+}
+.header .header__section .header__section--article  p {
+    font-size: 2rem;
+}
+.header .header__section .second {
+    position: relative;
+    left: 5rem;
+}
+.header .header__section .third {
+    position: relative;
+    left: 10rem;
+}
+.header .header__section .header__section--article > p {
+    margin: 0;
+    margin-right: 6rem;
+}
+.main .main__section {
+    flex-direction: row;
+    margin-top: 7rem;
+}
+.main .main__section .main__section--article {
+    width: 25%;
+    max-width: 30em;
+    min-height: 20em;
+}
+.main .main__section .second {
+    margin-left: 10rem;
+    position: relative;
+    top: 2rem;
+}
+.main .main__section .third {
+    margin-left: 10rem;
+    position: relative;
+    top: 4rem;
+}
+.main .main__section .main__section--article > div {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.main .main__section .first > div span {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+.main .main__section .second > div span {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+.main .main__section .third > div span {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+.main .main__section .main__section--article > div .title {
+    margin-bottom: 0.7rem;
+    font-size: 1.6rem;
+}
+.main .main__section .main__section--article > div .description{
+    font-size: 1.6rem;
+}
+.main .main__section .main__section--article > p {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
