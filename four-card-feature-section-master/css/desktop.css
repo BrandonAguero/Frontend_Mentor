@@ -1,0 +1,24 @@
+.main .main__div {
+    position: relative;
+    display: flex;
+}
+.main .main__div .div__section--first {
+    position: absolute;
+    top: 10rem;
+    left: calc(50% - 43rem)
+}
+.main .main__div .div__section--second {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 14rem);
+}
+.main .main__div .div__section--third {
+    position: absolute;
+    top: 22rem;
+    left: calc(50% - 14rem);
+}
+.main .main__div .div__section--fourth {
+    position: absolute;
+    top: 10rem;
+    right: calc(50% - 43rem);
+}
