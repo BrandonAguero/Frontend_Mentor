@@ -1,0 +1,13 @@
+:root {
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    --neutral-verydark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-veryligh-gray: hsl(0, 0%, 98%);
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
