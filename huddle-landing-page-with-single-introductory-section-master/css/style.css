@@ -1,12 +1,117 @@
 :root {
     --violet: hsl(257, 40%, 49%);
     --soft-magenta: hsl(300, 69%, 71%);
+    --white: #ffffff;
 }
 html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-body {
-    background: var(--violet);
+.header figure img {
+    width: 50%;
+    margin: 3rem 0 3rem 3rem;
 }
+.main figure {
+    width: 85%;
+    margin: 0 auto;
+}
+.main figure img {
+    width: 100%;
+}
+.main .main__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+.main .main__section h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    width: 80%;
+}
+.main .main__section p {
+    margin-top: 2rem;
+    color: var(--white);
+    line-height: 1.5rem;
+    width: 80%;
+}
+.main .main__section a {
+    margin-top: 2rem;
+    width: 60%;
+    padding: 1.5em;
+    background-color: var(--white);
+    text-decoration: none;
+    border-radius: 2em;
+    color: var(--violet);
+}
+.footer .footer__nav {
+    width: 50%;
+    margin: 0 auto;
+}
+.footer .footer__nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.footer .footer__nav ul li a .first{
+    background-image: url("../images/facebook-logo-24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--white);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.footer .footer__nav ul li a .second {
+    background-image: url("../images/twitter-logo-24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--white);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.footer .footer__nav ul li a .third {
+    background-image: url("../images/instagram-logo-24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--white);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+@media (max-width: 600px) {
+    body {
+        background-image: url("../images/bg-mobile.svg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #674baf;
+    }
+
+}
+@media (min-width: 600px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+        background-position: 10rem 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #674baf;
+    }
+}
+

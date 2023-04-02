@@ -1,0 +1,76 @@
+.header figure img {
+    max-width: 20em;
+}
+.main {
+    display: flex;
+    margin-left: 3rem;
+}
+.main figure img {
+    min-width: 30em;
+}
+.main .main__section {
+    margin-top: 2rem;
+    text-align: start;
+    align-items: start;
+}
+
+.main .main__section a {
+    text-align: center;
+    width: 40%;
+}
+.main .main__section a:hover {
+    background: var(--soft-magenta);
+}
+.footer .footer__nav {
+    width: 90%;
+}
+.footer .footer__nav ul {
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+}
+.footer .footer__nav ul li {
+    margin-right: 1rem;
+}
+.footer .footer__nav ul li a .first:hover {
+    background-image: url("../images/facebook-logo-24-rose.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--soft-magenta);
+}
+.footer .footer__nav ul li a .second:hover {
+    background-image: url("../images/twitter-logo-24-rose.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--soft-magenta);
+}
+.footer .footer__nav ul li a .third:hover {
+    background-image: url("../images/instagraam-logo-24-rose.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border: 0.1em solid var(--soft-magenta);
+}
+@media (min-width: 1000px) {
+    .main .main__section h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .main .main__section p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .main .main__section a {
+        font-size: 2rem;
+    }
+    .footer .footer__nav ul li a img {
+        width: 3em;
+        height: 3em;
+        margin-right: 4rem;
+    }
+}
