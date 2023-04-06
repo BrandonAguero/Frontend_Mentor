@@ -1,0 +1,14 @@
+:root {
+    --primary-pink: #ff52bf;
+    --primary-light-pink: #ff8fd8;
+    --primary-light-red: #ff4242;
+    --neutral-verydark-cyan: #00252e;
+    --neutral-verypale-blue: #f5faff ;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
