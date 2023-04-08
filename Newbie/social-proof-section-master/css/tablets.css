@@ -1,0 +1,10 @@
+.header .header__section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main .main__section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

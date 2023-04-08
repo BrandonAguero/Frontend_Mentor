@@ -24,6 +24,7 @@
 }
 .header .header__section .header__section--article {
     display: inline-flex;
+    min-width: 600px;
     flex-direction: row;
     margin: 0;
     justify-content: space-evenly;

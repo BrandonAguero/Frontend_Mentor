@@ -7,11 +7,14 @@
 }
 html {
     font-size: 62.5%;
-    /* font-size: 15px; */
+}
+body {
     font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
 }
 .header .header__div {
     width: 90%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +45,7 @@ html {
 .header .header__section .header__section--article {
     background-color: var(--neutral-lightgrayish-magenta);
     width: 90%;
+    max-width: 290px;
     align-items: center;
     border-radius: 0.5em;
     margin-top: 1rem;
@@ -66,9 +70,11 @@ html {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
 .main .main__section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
     margin-top: 3rem;
@@ -76,6 +82,7 @@ html {
 .main .main__section .main__section--article {
     background-color: var(--primary-verydark-magenta);
     border-radius: 0.5em;
+    max-width: 290px;
 }
 .main .main__section .main__section--article > div {
     margin-top: 1rem;
