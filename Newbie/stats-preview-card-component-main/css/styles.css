@@ -8,11 +8,11 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
 }
 body {
     background-color: var(--primary-verydark-blue);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .main {
     width: 100%;
