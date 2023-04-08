@@ -124,6 +124,7 @@ body {
 }
 .main .main__section--second .main__section--article :nth-child(2) {
     font-size: 2rem;
+    font-weight: bold;
     text-transform: capitalize;
     color: var(--neutral-verydark-cyan);
     margin-bottom: 1rem;

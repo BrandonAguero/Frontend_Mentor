@@ -1,0 +1,105 @@
+.main .main__section--first .main__section--h1 {
+    max-width: 640px;
+}
+.main .main__section--first .main__section--p {
+    max-width: 450px;
+    margin-bottom: 1rem;
+}
+.main .main__section--first .main__section--figure {
+    max-width: 640px;
+}
+.main .main__section--second {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main .main__section--second :first-of-type div {
+    width: 2em;
+    height: 2em;
+}
+.main .main__section--second .main__section--article {
+    width: 9em;
+}
+.main .main__section--second :last-of-type div {
+    width: 2em;
+    height: 2em;
+}
+.main .main__section--second .main__section--article :nth-child(2) {
+    font-size: 4rem;
+}
+.main .main__section--second .main__section--article :nth-child(3) {
+    font-size: 1rem;
+}
+.main .main__section--third {
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.main .main__section--third .main__section--figure {
+    max-width: 400px;
+}
+.main .main__section--third .main__section--article {
+    margin-right: 4rem;
+}
+.main .main__section--third .main__section--article h2 {
+    font-size: 2rem;
+    text-align: start;
+}
+.main .main__section--third .main__section--article p {
+    text-align: start;
+    width: 28em;
+}
+.main .main__section--fourth {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main .main__section--fourth .main__section--article {
+    margin-left: 4rem;
+}
+.main .main__section--fourth .main__section--figure {
+    max-width: 400px;
+}
+.main .main__section--fourth .main__section--article h2 {
+    font-size: 2rem;
+    text-align: start;
+}
+.main .main__section--fourth .main__section--article p {
+    text-align: start;
+    width: 28em;
+}
+.main .main__section--fiveth {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.main .main__section--fiveth .main__section--figure {
+    max-width: 400px;
+}
+.main .main__section--fiveth .main__section--article h2 {
+    text-align: start;
+    font-size: 2rem;
+}
+.main .main__section--fiveth .main__section--article p {
+    text-align: start;
+    width: 28em;
+}
+.footer {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.footer .footer__section {
+    max-width: 600px;
+}
+.footer .footer__section .footer__section--p {
+    width: 20em;
+}
+.footer .footer__section--first .footer__section--form {
+    flex-direction: row;
+}
+.footer .footer__section--first .footer__section--form .footer__section--input {
+    width: 24em;
+    height: 4em;
+}
+.footer .footer__section--first .footer__section--form .footer__section--submit {
+    height: 4em;
+    margin-left: 2rem;
+    align-self: baseline;
+    cursor: pointer;
+}
