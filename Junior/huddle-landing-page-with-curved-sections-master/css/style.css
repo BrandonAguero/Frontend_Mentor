@@ -261,10 +261,12 @@ body {
     background-color: var(--neutral-verydark-cyan);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .footer .footer__section {
     width: 85%;
     margin: 0 auto;
+    max-width: 30em;
 }
 .footer .footer__section .footer__section--p {
     color: var(--neutral-verypale-blue);
