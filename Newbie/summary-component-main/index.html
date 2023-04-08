@@ -1,75 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 600px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./tablet.css" media="(min-width: 600px)" />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main class="main_container">
-      <section class="section-container">
-        <div class="section_div-first">
-          <section class="div_section">
-            <h2>Your Result</h2>
-            <div>
-              <p>76</p>
-              <p>of 100</p>
-            </div>
-            <h1>Great</h1>
-            <p>Your scored higher than 65% of the people who have taken these tests.</p>
-          </section>
-        </div> 
-        <div class="section_div-second">
-          <section class="div_section">
-            <div>
-              <h3>Summary</h3>
-            </div>
-            <article class="article div_article-one">
-              <div>
-                <span></span>
-                <p>Reaction</p>
-              </div>
-              <div>
-                <p>80 <span>/ 100</span></p>
-              </div>
-            </article>
-            <article class="article div_article-two">
-              <div>
-                <span></span>
-                <p>Memory</p>
-              </div>
-              <div>
-                <p>92 <span>/ 100</span></p>
-              </div>
-            </article>
-            <article class="article div_article-three">
-              <div>
-                <span></span>
-                <p>Verbal</p>
-              </div>
-              <div>
-                <p>61 <span>/ 100</span></p>
-              </div>
-            </article>
-            <article class="article div_article-four">
-              <div>
-                <span></span>
-                <p>Visual</p>
-              </div>
-              <div>
-                <p>72 <span>/ 100</span></p>
-              </div>
-            </article>
-            <button class="primary-button">Continue</button>
-          </section>
+    <main class="main">
+      <section class="main__section--first main__section">
+        <p>your result</p>
+        <div>
+          <p><span>76</span> of 100</p>
         </div>
+        <p>great</p>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+      <section class="main__section--second">
+        <p>summary</p>
+        <div class="main__section--div">
+          <div>
+            <p><span></span>reaction</p>
+          </div>
+          <div>
+            <p><span>80</span><span> / 100</span></p>
+          </div>
+        </div>
+        <div class="main__section--div">
+          <div>
+            <p><span></span>memory</p>
+          </div>
+          <div>
+            <p><span>92</span><span> / 100</span></p>
+          </div>
+        </div>
+        <div class="main__section--div">
+          <div>
+            <span></span>
+            <p><span></span>verbal</p>
+          </div>
+          <div>
+            <p><span>61</span><span> / 100</span></p>
+          </div>
+        </div>
+        <div class="main__section--div">
+          <div>
+            <p><span></span>visual</p>
+          </div>
+          <div>
+            <p><span>72</span><span> / 100</span></p>
+          </div>
+        </div>
+        <a class="main__section--a" href="#">Continue</a>
       </section>
     </main>
   </body>
