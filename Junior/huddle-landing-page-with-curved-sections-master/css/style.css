@@ -261,7 +261,7 @@ body {
     background-color: var(--neutral-verydark-cyan);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
 }
 .footer .footer__section {
     width: 85%;
