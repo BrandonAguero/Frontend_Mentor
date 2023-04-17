@@ -1,0 +1,184 @@
+:root {
+    --background-first: hsl(263, 55%, 52%);
+    --background-second: hsl(217, 19%, 35%);
+    --background-third: hsl(219, 29%, 14%);
+    --background-fourth: hsl(0, 0%, 100%);
+    --color-heading: hsl(210, 46%, 95%);
+    --color-paragraph: hsl(0, 0%, 81%);
+    --size-paragraph: 1.3rem;
+    --size-tittle: 1.5rem;
+    --size-height: 1.8rem;
+}   
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsla(217, 38%, 31%, 0.16);
+}
+html {
+    font-size: 62.5%;
+}
+.main {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, minmax(min-content, max-content));
+    grid-template-areas: "first first"
+    "first first"
+    "second second"
+    "third third"
+    "fourth fourth"
+    "fourth fourth"
+    "fiveth fiveth"
+    "fiveth fiveth";
+    row-gap: 2rem;
+}
+.main .main__section--first {
+    background-color: var(--background-first);
+    grid-area: first;
+}
+.main .main__section--first > div:nth-of-type(2) {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+.main .main__section--first .main__section--div div p:first-of-type {
+    color: var(--color-heading);
+}
+.main .main__section--first .main__section--article :first-of-type {
+    color: var(--color-heading);
+} 
+.main .main__section--first .main__section--article :last-of-type {
+    color: var(--color-paragraph);
+}
+
+.main .main__section--first .main__section--div span {
+    background-image: url("../images/image-daniel.jpg");
+}
+.main .main__section--second {
+    background-color: var(--background-second);
+}
+.main .main__section--second .main__section--div span {
+    background-image: url("../images/image-jonathan.jpg");
+}
+.main .main__section--second .main__section--div div p:first-of-type {
+    color: var(--color-heading);
+}
+.main .main__section--second .main__section--article p:first-of-type {
+    color: var(--color-heading);
+}
+.main .main__section--second .main__section--article p:last-of-type {
+    color: var(--color-paragraph);
+}
+.main .main__section--third {
+    background-color: var(--background-fourth);
+}
+.main .main__section--third .main__section--div span {
+    background-image: url("../images/image-jeanette.jpg");
+}
+.main .main__section--third .main__section--div div p:first-of-type {
+    color: var(--background-second);
+}
+.main .main__section--third .main__section--article p:first-of-type {
+    color: var(--background-second);
+}
+.main .main__section--third .main__section--article p:last-of-type {
+    color: var(--color-paragraph);
+}
+.main .main__section--fourth {
+    background-color: var(--background-third);
+}
+.main .main__section--fourth .main__section--div span {
+    background-image: url("../images/image-patrick.jpg");
+}
+.main .main__section--fourth .main__section--div div p:first-of-type {
+    color: var(--color-heading);
+}
+.main .main__section--fourth .main__section--article p:first-of-type {
+    color: var(--color-heading);
+}
+.main .main__section--fourth .main__section--article p:last-of-type {
+    color: var(--color-paragraph);
+}
+.main .main__section--fiveth {
+    background-color: var(--background-fourth);
+}
+.main .main__section--fiveth .main__section--div span {
+    background-image: url("../images/image-kira.jpg");
+}
+.main .main__section--fiveth .main__section--div div p:first-of-type {
+    color: var(--background-second);
+}
+.main .main__section--fiveth .main__section--article p:first-of-type {
+    color: var(--background-second);
+}
+.main .main__section--fiveth .main__section--article p:last-of-type {
+    color: var(--color-paragraph);
+}
+.main .main__section {
+    position: relative; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.main .main__section .main__section--div {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.main .main__section .main__section--div span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid var(--color-heading);
+    margin-right: 1rem;
+}
+.main .main__section .main__section--div div p:first-of-type {
+    font-size: var(--size-tittle);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.main .main__section .main__section--div div p:last-of-type {
+    color: var(--color-paragraph);
+    text-transform: capitalize;
+    font-size: var(--size-paragraph);
+}
+.main .main__section .main__section--article :first-of-type {
+    font-size: var(--size-tittle);
+    line-height: var(--size-height);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+.main .main__section .main__section--article :last-of-type {
+    font-size: var(--size-paragraph);
+    line-height: var(--size-height);
+    margin-bottom: 2rem;
+}
+.main .main__section--second {
+    grid-area: second;
+}
+.main .main__section--third {
+    grid-area: third;
+}
+.main .main__section--fourth {
+    grid-area: fourth;
+}
+.main .main__section--fiveth {
+    grid-area: fiveth;
+}

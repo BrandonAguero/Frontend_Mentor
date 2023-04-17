@@ -1,0 +1,12 @@
+.main {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    margin-top: 2rem;
+    padding: 4rem 12rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-template-areas: "first first second fiveth"
+    "third fourth fourth fiveth";
+    gap: 2rem;
+}
