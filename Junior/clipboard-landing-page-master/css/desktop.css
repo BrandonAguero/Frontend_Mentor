@@ -1,0 +1,55 @@
+@media screen and (min-width: 864px) {
+    .main .main__section--first .main__section--article {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header .header__div :first-of-type:hover {
+        opacity: 0.8;
+    }
+    .header .header__div :last-of-type:hover {
+        opacity: 0.8;
+    }
+    .main .main__section--fourth .main__section--figure {
+        width: 100%;
+    }
+    .main .main__section--fiveth div :first-of-type:hover {
+        opacity: 0.8;
+    }
+    .main .main__section--fiveth div :last-of-type:hover {
+        opacity: 0.8;
+    }
+    .footer .footer__div {
+        width: 25%;
+    }
+    .footer .footer__ul {
+        grid-template-columns: repeat(4, minmax(10rem, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        text-align: start;
+        column-gap: 4rem;
+        row-gap: 1rem;
+        grid-template-areas: "img info1 info2 info3"
+        "img info4 info5 .";
+    }
+    .footer .footer__ul li:hover a {
+        color: var(--background-ios-color);
+    }
+
+    .footer .footer__div {
+        gap: 4rem;
+    }
+    .footer .footer__div :first-of-type:hover {
+        background-image: url("../img/facebook-green.svg");
+        cursor: pointer;
+    }
+    .footer .footer__div :nth-of-type(2):hover {
+        background-image: url("../img/twitter-green.svg");
+        cursor: pointer;
+    }
+    .footer .footer__div :nth-of-type(3):hover {
+        background-image: url("../img/instagram-green.svg");
+        cursor: pointer;
+    }
+}

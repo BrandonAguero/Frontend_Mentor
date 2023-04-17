@@ -1,0 +1,423 @@
+:root {
+    --background-ios-color: #26baa4;
+    --background-mac-color: hsl(233, 100%, 69%);
+    --color-hedings: hsl(210, 10%, 33%);
+    --color-paragraphs: hsl(201, 11%, 66%);
+    --color-letter-button: #ffffff;
+    --size-headings: 2rem;
+    --size-paragraphs: 1.5rem; 
+    --size-button: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__figure {
+    margin-top: 8rem;
+    width: 8rem;
+    margin-bottom: 4rem;
+}
+.header__figure img {
+    width: 100%;
+}
+.header h1 {
+    color: var(--color-hedings);
+    font-size: var(--size-headings);
+    font-weight: bold;
+    min-width: 20rem;
+    width: 50%;
+    max-width: 34rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+.header p {
+    color: var(--color-paragraphs);
+    font-size: var(--size-paragraphs);
+    text-align: center;
+    min-width: 28rem;
+    width: 50%;
+    max-width: 51rem;
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+}
+.header .header__div {
+    display: flex;
+    min-width: 28rem;
+    width: 85%;
+    max-width: 70rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.header .header__div :first-of-type {
+    color: var(--color-letter-button);
+    background-color: var(--background-ios-color);
+    text-align: center;
+    font-size: var(--size-button);
+    min-width: 25rem;
+    padding: 1rem;
+    text-decoration: none; 
+    border-radius: 2rem; 
+    box-shadow: 0rem 0.4rem 0.8rem 0.0rem  rgba(38, 186, 164, 0.526);
+    border-bottom: 0.2rem solid rgba(11, 72, 62, 0.393);
+}
+.header .header__div :last-of-type {
+    color: var(--color-letter-button);
+    background-color: var(--background-mac-color);
+    text-align: center;
+    font-size: var(--size-button);
+    min-width: 25rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.4rem 0.8rem 0.0rem rgba(97, 115, 255,0.526);
+    border-bottom: 0.2rem solid rgba(24, 31, 83, 0.393);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__h2 {
+    font-size: var(--size-headings);
+    font-weight: bold;
+    line-height: 2.5rem;
+    min-width: 20rem;
+    width: 50%;
+    max-width: 27rem;
+    text-align: center;
+    color: var(--color-hedings);
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+}
+.main .main__p {
+    color: var(--color-paragraphs);
+    font-size: var(--size-paragraphs);
+    text-align: center;
+    min-width: 28rem;
+    width: 60%;
+    max-width: 58rem;
+    line-height: 2.3rem;
+    margin-bottom: 6rem;
+}
+.main .main__section--first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.main .main__section--first .main__section--figure {
+    min-width: 27.2rem;
+    width: 85%;
+    max-width: 50rem;
+}
+.main .main__section--first .main__section--figure img {
+    width: 100%;
+}
+.main .main__section--first .main__section--article {
+    min-width: 27.2rem;
+    width: 85%;
+    max-width: 31.4rem;
+    max-height: 34rem;
+    text-align: center;
+}
+.main .main__section--first .main__section--article h3 {
+    text-transform: capitalize;
+    font-size: var(--size-headings);
+    font-weight: bold;
+    color: var(--color-hedings);
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+.main .main__section--first .main__section--article p {
+    color: var(--color-paragraphs);
+    font-size: var(--size-paragraphs);
+    margin-bottom: 4rem;
+    line-height: 2.3rem;
+}
+.main .main__section--second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.main .main__section--second h2 {
+    text-transform: capitalize;
+    font-size: var(--size-headings);
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--color-hedings);
+    min-width: 20rem;
+    width: 50%;
+    max-width: 26.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.main .main__section--second p {
+    color: var(--color-paragraphs);
+    font-size: var(--size-paragraphs);
+    text-align: center;
+    line-height: 2.3rem;
+    min-width: 28rem;
+    width: 90%;
+    max-width: 60rem;
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+}
+.main .main__section--second figure {
+    min-width: 27.2rem;
+    width: 80%;
+    max-width: 90rem;
+}
+.main .main__section--second figure img {
+    width: 100%;    
+}
+.main .main__section--third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.main .main__section--third .main__section--section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main .main__section--third > h3 {
+    text-transform: capitalize;
+    font-size: var(--size-headings);
+    color: var(--color-hedings);
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    min-width: 19rem;
+    width: 60%;
+    max-width: 26rem;
+}
+.main .main__section--third > p {
+    font-size: var(--size-paragraphs);
+    color: var(--color-paragraphs);
+    min-width: 25rem;
+    width: 80%;
+    max-width: 34rem;
+    margin-bottom: 4rem;
+    line-height: 2.3rem;
+}
+.main .main__section--third .main__section--article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__section--third :nth-of-type(1) div {
+    background-image: url("../img/icon-blacklist.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+.main .main__section--third :nth-of-type(2) div {
+    background-image: url("../img/icon-text.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+.main .main__section--third :nth-of-type(3) div {
+    background-image: url("../img/icon-preview.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+.main .main__section--third div {
+    margin-bottom: 2rem;
+}
+.main .main__section--third h3 {
+    text-transform: capitalize;
+    color: var(--color-hedings);
+    font-size: var(--size-headings);
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    min-width: 24rem;
+    width: 70%;
+    max-width: 28rem;
+}
+.main .main__section--third p {
+    font-size: var(--size-paragraphs);
+    color: var(--color-paragraphs);
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+    min-width: 28.8rem;
+    width: 90%;
+    max-width: 35rem;
+}
+.main .main__section--fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16rem;
+}
+.main .main__section--fourth .main__section--figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    min-width: 26rem;
+    width: 70%;
+}
+.main .main__section--fiveth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.main .main__section--fiveth h3 {
+    font-size: var(--size-headings);
+    font-weight: bold;
+    color: var(--color-hedings);
+    line-height: 2.5rem;
+    min-width: 24rem;
+    width: 75%;
+    max-width: 29rem;
+    margin-bottom: 1.5rem;
+}
+.main .main__section--fiveth p {
+    font-size: var(--size-paragraphs);
+    color: var(--color-paragraphs);
+    min-width: 24rem;
+    width: 80%;
+    max-width: 70rem;
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+}
+.main .main__section--fiveth div {
+    display: flex;
+    min-width: 28rem;
+    width: 85%;
+    max-width: 70rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.main .main__section--fiveth div :first-of-type {
+    color: var(--color-letter-button);
+    background-color: var(--background-ios-color);
+    text-align: center;
+    font-size: var(--size-button);
+    min-width: 25rem;
+    padding: 1rem;
+    text-decoration: none; 
+    border-radius: 2rem; 
+    box-shadow: 0rem 0.4rem 0.8rem 0.0rem  rgba(38, 186, 164, 0.526);
+    border-bottom: 0.2rem solid rgba(11, 72, 62, 0.393);
+}
+.main .main__section--fiveth div :last-of-type {
+    color: var(--color-letter-button);
+    background-color: var(--background-mac-color);
+    text-align: center;
+    font-size: var(--size-button);
+    min-width: 25rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.4rem 0.8rem 0.0rem rgba(97, 115, 255,0.526);
+    border-bottom: 0.2rem solid rgba(24, 31, 83, 0.393);
+}
+.footer {
+    background-color: hsla(202, 11%, 66%, 0.100);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 8rem;
+}
+.footer .footer__ul {
+    width: 85%;
+    max-width: 25rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: "img"
+    "info1"
+    "info2"
+    "info3"
+    "info4"
+    "info5";
+    text-align: center;
+}
+.footer .footer__ul .img {
+    grid-area: img;
+}
+.footer .footer__ul img {
+    width: 6rem;
+    height: 6rem;
+}
+.footer .footer__ul a {
+    text-decoration: none;
+    color: var(--color-hedings);
+    font-size: var(--size-paragraphs);
+}
+.footer .footer__div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: 5rem;
+    justify-content: center;
+    width: 11%;
+}
+.footer .footer__div :first-of-type {
+    background-image: url("../img/facebook-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+}
+.footer .footer__div :nth-of-type(2) {
+    background-image: url("../img/twitter-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+}
+.footer .footer__div :nth-of-type(3) {
+    background-image: url("../img/instagram-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+}
