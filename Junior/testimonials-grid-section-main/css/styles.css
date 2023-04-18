@@ -21,11 +21,16 @@ html {
     font-size: 62.5%;
 }
 .main {
-    width: 100%;
+    width: 90%;
     height: max-content;
-    display: grid;
+    min-width: 29rem;
+    max-width: 70rem;
+    min-height: 123rem;
+    max-height: 178rem;
+    margin: 0 auto;
     margin-top: 2rem;
-    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, minmax(min-content, max-content));
     grid-template-areas: "first first"

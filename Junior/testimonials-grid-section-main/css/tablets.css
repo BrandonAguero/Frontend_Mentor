@@ -1,9 +1,12 @@
 .main {
-    width: 100%;
-    height: max-content;
     display: grid;
-    margin-top: 2rem;
-    padding: 12rem 12rem;
+    place-content: center;
+    min-width: 90rem;
+    width: 90%;
+    max-width: 110rem;
+    min-height: 68rem;
+    height: max-content;
+    max-height: 70rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
     grid-template-areas: "first first second fiveth"
