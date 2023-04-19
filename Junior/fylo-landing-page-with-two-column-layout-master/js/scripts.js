@@ -5,11 +5,6 @@ const btnSubmitTwo = document.querySelector(".btn_submit-two");
 const wrongEmailTwo = document.querySelector(".wrong_email-two");
 const inputTextTwo = document.querySelector(".input_text-two");
 
-console.log({
-    btnSubmitTwo,
-    wrongEmailTwo,
-    inputTextTwo
-})
 
 btnSubmitOne.addEventListener("click", onClickButtonOne);
 btnSubmitTwo.addEventListener("click", onClickButtonTwo);
