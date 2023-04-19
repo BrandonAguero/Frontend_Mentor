@@ -6,9 +6,6 @@ body {
 }
 .main {
     display: flex;
-    box-shadow: 0rem 0.4rem 0.8rem rgba(48, 59, 90, 0.378);
-    border-radius: 2em;
-    overflow: hidden;
 }
 .main__section--second .main__section--a:hover {
     background-color: var(--background-lightroyal-blue);
@@ -18,7 +15,6 @@ body {
     border-top-right-radius: 2em;
 }
 .main__section--first > p:first-child {
-    font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }

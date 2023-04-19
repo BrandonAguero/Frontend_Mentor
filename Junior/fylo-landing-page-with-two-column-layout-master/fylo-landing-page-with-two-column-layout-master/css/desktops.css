@@ -1,0 +1,21 @@
+.header .header__nav ul li a:hover {
+    color: var(--background-button);
+}
+.header .header__section form :last-of-type:hover {
+    opacity: 0.8;
+}
+.main .main__section--second > form :last-of-type:hover {
+    opacity: 0.8;
+}
+.facebook:hover {
+    background-image: url("../images/icon-facebook-blue.svg");
+}
+.instagram:hover {
+    background-image: url("../images/icon-instagram-blue.svg");
+}
+.twitter:hover {
+    background-image: url("../images/icon-twitter-blue.svg");
+}
+.footer .footer__ul li a:hover {
+    color: var(--background-button);
+}

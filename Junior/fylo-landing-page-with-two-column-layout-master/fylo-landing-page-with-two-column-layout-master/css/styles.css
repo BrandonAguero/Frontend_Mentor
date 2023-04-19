@@ -1,0 +1,384 @@
+:root {
+    --color-heading: hsl(243, 87%, 12%);
+    --color-paragraph: hsl(243, 87%, 12%);
+    --background-only-section: hsl(238, 22%, 44%);
+    --background-button: hsl(224, 93%, 58%);
+    --color-only-link: hsl(170, 45%, 43%);
+    --color-placeholder: hsl(0, 0%, 75%);
+    --color-footer: hsl(240, 75%, 98%);
+    --color-button: hsl(240, 75%, 98%);
+    --color-form: hsl(240, 75%, 98%);
+    --size-heigth-heading: 3rem;
+    --size-height-paragraph: 2rem;
+    --font-size-paragraph: 1.5rem;
+    --font-size-heading: 2rem;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-button);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.header .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+.header .header__nav img {
+    width: 35%;
+    min-width: 10rem;
+    max-width: 15rem;
+}
+.header .header__nav ul {
+    display: flex;
+    min-width: 17rem;
+    width: 60%;
+    max-width: 30rem;
+    justify-content: space-evenly;
+}
+.header .header__nav ul li a {
+    font-size: var(--font-size-paragraph);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--color-heading);
+}
+.header .header__section {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+}
+.header .header__section figure {
+    min-width: 28.8rem;
+    width: 100%;
+    max-width: 47rem;
+    margin-bottom: 2rem;
+}
+.header .header__section figure img {
+    width: 100%;
+}
+.header .header__section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .header__section div h1 {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading);
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    min-width: 25.9rem;
+    width: 90%;
+    max-width: 50rem;
+}
+.header .header__section div p {
+    font-size: var(--font-size-paragraph);
+    color: var(--color-paragraph);
+    line-height: var(--size-height-paragraph);
+    min-width: 25.9rem;
+    width: 90%;
+    max-width: 50rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.header .header__section form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+.header .header__section form :first-of-type {
+    min-width: 26rem;
+    width: 100%;
+    max-width: 37rem;
+    height: 4rem;
+    padding: 1rem;
+    border: 0.1rem solid var(--color-paragraph);
+    border-radius: 0.3rem;
+}
+.header .header__section form :first-of-type::placeholder {
+    color: var(--color-placeholder);
+}
+.header .header__section form :last-of-type {
+    min-width: 26rem;
+    width: 100%;
+    max-width: 37rem;
+    height: 4rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--color-paragraph);
+    border-radius: 0.3rem;
+    background-color: var(--background-button);
+    color: var(--color-button);
+    font-weight: 500;
+    font-size: var(--font-size-paragraph);
+    border: none;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__section--first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__section--first figure {
+    min-width: 28.8rem;
+    width: 90%;
+    max-width: 47rem;
+    margin-bottom: 2rem;
+}
+.main .main__section--first figure img {
+    width: 100%;
+}
+.main .main__section--first > h2 {
+    color: var(--color-heading);
+    font-weight: bold;
+    line-height: var(--size-heigth-heading);
+    font-size: var(--font-size-heading);
+    text-align: center;
+    min-width: 28rem;
+    width: 90%;
+    max-width: 34rem;
+    margin-bottom: 2rem;
+}
+.main .main__section--first > p {
+    color: var(--color-heading);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--size-height-paragraph);
+    min-width: 28.8rem;
+    width: 90%;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+.main .main__section--first > a {
+    color: var(--color-only-link);
+    display: flex;
+    height: 3rem;
+    font-size: var(--font-size-paragraph);
+    width: 16.9rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 0.1rem solid var(--color-only-link);
+    margin-bottom: 2rem;
+}
+.main .main__section--first > a span {
+    background-image: url("../images/icon-arrow.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+
+}
+.main .main__section--first > div{
+    min-width: 28.8rem;
+    width: 90%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.13);
+    margin-bottom: 12rem;
+}
+.main .main__section--first > div img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.main .main__section--first > div > p {
+    color: var(--color-paragraph);
+    font-size: var(--font-size-paragraph);
+    line-height: var(--size-height-paragraph);
+    margin-bottom: 2rem;
+}
+.main .main__section--first > div span {
+    background-image: url("../images/avatar-testimonial.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.main .main__section--first > div > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main .main__section--first > div > div div :first-of-type {
+    font-weight: bold;
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 0.5rem;
+}
+.main .main__section--first > div > div div :last-of-type {
+    font-size: 1rem;
+}
+.main .main__section--second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-only-section);
+}
+.main .main__section--second h3 {
+    color: var(--color-footer);
+    font-size: var(--font-size-heading);
+    line-height: var(--size-heigth-heading);
+    font-weight: bold;
+    margin-top: 4rem;
+    text-align: center;
+    min-width: 24rem;
+    width: 60%;
+    max-width: 27rem;
+    margin-bottom: 2rem;
+}
+.main .main__section--second > p {
+    color: var(--color-footer);
+    font-size: var(--font-size-paragraph);
+    line-height: var(--size-height-paragraph);
+    text-align: center;
+    min-width: 30rem;
+    width: 65%;
+    max-width: 45rem;
+}
+.main .main__section--second > form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    margin-bottom: 6rem;
+}
+.main .main__section--second > form :first-of-type {
+    min-width: 26rem;
+    width: 80%;
+    max-width: 37rem;
+    height: 4rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+.main .main__section--second > form :first-of-type::placeholder {
+    color: var(--color-placeholder);
+}
+.main .main__section--second > form :last-of-type {
+    min-width: 26rem;
+    width: 80%;
+    max-width: 37rem;
+    cursor: pointer;
+    height: 4rem;
+    padding: 1rem;
+    border: 0.1rem solid var(--color-paragraph);
+    border-radius: 0.3rem;
+    background-color: var(--background-button);
+    color: var(--color-button);
+    font-weight: 500;
+    font-size: var(--font-size-paragraph);
+    border: none;
+}
+.footer {
+    background-color: var(--color-heading);
+    padding: 6rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer__ul {       
+    min-width: 24rem;
+    width: 90%;
+    max-width: 27rem;
+}
+.footer__ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.footer__ul li span {
+    font-size: var(--font-size-paragraph);
+}
+.footer__ul--first li .icon {
+    width: 2rem;
+    height: 2rem;
+}
+.footer .footer__ul--fourth {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.footer .footer__ul--fourth li{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+}
+.footer .footer__ul li a{
+    text-decoration: none;
+    color: var(--color-footer);
+    text-transform: capitalize;
+    font-size: var(--font-size-paragraph);
+}
+.footer .footer__ul li span{
+    margin-left: 2rem;
+    color: var(--color-footer);
+}
+.facebook {
+    display: inline-block;
+    border: 0.1rem solid var(--color-footer);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-image: url("../images/icon-face-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.instagram {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-footer);
+    background-image: url("../images/icon-instagram-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.twitter {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-footer);
+    background-image: url("../images/icon-twitter-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
