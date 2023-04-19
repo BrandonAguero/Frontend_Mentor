@@ -328,7 +328,7 @@ body {
 .footer {
     min-width: 32rem;
     width: 100%;
-    max-width: 155  rem;
+    max-width: 155rem;
     background-color: var(--color-heading);
     display: flex;
     justify-content: center;
