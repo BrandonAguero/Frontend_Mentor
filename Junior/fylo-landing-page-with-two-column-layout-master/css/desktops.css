@@ -8,7 +8,7 @@
 .header .header__section div h1 {
     text-align: start;
 }
-.header .header__section div p {
+.header .header__section div > p {
     text-align: start;
 }
 .header .header__section div {
@@ -18,18 +18,18 @@
 .header .header__section form {
     justify-content: space-between;
 }
-.header .header__section form :first-of-type {
+.header .header__section form input:first-of-type {
     min-width: 26.7rem;
-    width: 64%;
+    width: 90%;
 }
-.header .header__section form :last-of-type {
+.header .header__section form input:last-of-type {
     min-width: 13rem;
     width: 31%;
 }
-.header .header__section form :last-of-type:hover {
+.header .header__section form input:last-of-type:hover {
     opacity: 0.8;
 }
-.main .main__section--second > form :last-of-type:hover {
+.main .main__section--second > form input:last-of-type:hover {
     opacity: 0.8;
 }
 .main .main__section--first {
@@ -52,7 +52,7 @@
 .main .main__section--second form {
     align-items: start;
 }
-.main .main__section--second > form :first-of-type {
+.main .main__section--second > form input:first-of-type {
     width: 90%;
 }
 .main .main__section--second > form :nth-of-type(2) {

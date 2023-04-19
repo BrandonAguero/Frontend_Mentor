@@ -1,4 +1,5 @@
 :root {
+    --wrong-email: hsl(0, 100%, 50%);
     --color-heading: hsl(243, 87%, 12%);
     --color-paragraph: hsl(243, 87%, 12%);
     --background-only-section: hsl(238, 22%, 44%);
@@ -81,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 84.5%
+    width: 84.5%;
 }
 .header .header__section div h1 {
     color: var(--color-heading);
@@ -94,7 +95,7 @@ body {
     width: 90%;
     max-width: 50rem;
 }
-.header .header__section div p {
+.header .header__section div > p {
     font-size: var(--font-size-paragraph);
     color: var(--color-paragraph);
     line-height: var(--size-height-paragraph);
@@ -108,10 +109,13 @@ body {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    min-width: 26rem;
     width: 90%;
+    max-width: 37rem;
     justify-content: center;
+    position: relative;
 }
-.header .header__section form :first-of-type {
+.header .header__section form input:first-of-type {
     min-width: 26rem;
     width: 100%;
     max-width: 37rem;
@@ -123,7 +127,7 @@ body {
 .header .header__section form :first-of-type::placeholder {
     color: var(--color-placeholder);
 }
-.header .header__section form :last-of-type {
+.header .header__section form input:last-of-type {
     min-width: 26rem;
     width: 100%;
     max-width: 37rem;
@@ -296,8 +300,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
-.main .main__section--second > form :first-of-type {
+.main .main__section--second > form input:first-of-type {
     min-width: 26rem;
     width: 80%;
     max-width: 37rem;
@@ -306,8 +311,9 @@ body {
     border: none;
     border-radius: 0.3rem;
     margin-bottom: 2rem;
+    position: relative;
 }
-.main .main__section--second > form :first-of-type::placeholder {
+.main .main__section--second > form input:first-of-type::placeholder {
     color: var(--color-placeholder);
 }
 .main .main__section--second > form :nth-of-type(2) {
@@ -409,6 +415,29 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.wrong-email {
-    display: none;
+.wrong_email-one {
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    color: var(--wrong-email);
+    font-size: 1rem;
+}
+.wrong_email-two {
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    color: var(--color-footer);
+    font-size: 1rem;
+}
+.header .header__section form .inactive:nth-child(1) {
+    border: 0.1rem solid var(--wrong-email);
+}
+.header .header__section form .inactive:nth-child(1):focus  {
+    outline: 0.1rem solid var(--wrong-email);
+}
+.main .main__section--second > form .inactive:nth-child(1) {
+    border: 0.1rem solid var(--wrong-email);
+}
+.main .main__section--second > form .inactive:nth-child(1):focus {
+    outline: 0.1rem solid var(--wrong-email);
 }
