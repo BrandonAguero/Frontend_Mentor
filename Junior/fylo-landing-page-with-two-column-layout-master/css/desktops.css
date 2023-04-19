@@ -1,11 +1,76 @@
 .header .header__nav ul li a:hover {
     color: var(--background-button);
 }
+.header .header__section {
+    flex-direction: row;
+    padding: 2rem 4rem;
+}
+.header .header__section div h1 {
+    text-align: start;
+}
+.header .header__section div p {
+    text-align: start;
+}
+.header .header__section div {
+    align-items: flex-start;
+    max-width: 58rem;
+}
+.header .header__section form {
+    justify-content: space-between;
+}
+.header .header__section form :first-of-type {
+    min-width: 26.7rem;
+    width: 64%;
+}
+.header .header__section form :last-of-type {
+    min-width: 13rem;
+    width: 31%;
+}
 .header .header__section form :last-of-type:hover {
     opacity: 0.8;
 }
 .main .main__section--second > form :last-of-type:hover {
     opacity: 0.8;
+}
+.main .main__section--first {
+    flex-direction: row-reverse;
+    padding: 2rem 4rem;
+}
+.main .main__section--first article {
+    align-items: flex-start;
+    max-width: 70rem;
+}
+.main .main__section--first article > h2 {
+    font-size: 3rem;
+    text-align: start;
+}
+.main .main__section--second {
+    flex-direction: row;
+    padding: 2rem 4rem;
+    align-content: center;
+}
+.main .main__section--second form {
+    align-items: start;
+}
+.main .main__section--second > form :first-of-type {
+    width: 90%;
+}
+.main .main__section--second > form :nth-of-type(2) {
+    min-width: 15rem;
+    width: 60%;
+    max-width: 20rem;
+}
+.main .main__section--second .main__section--article {
+    align-items: flex-start;
+}
+.main .main__section--second .main__section--article h3 {
+    text-align: start;
+}  
+.main .main__section--second .main__section--article > p {
+    text-align: start;
+}
+.main .main__section--second > form {
+    width: 50%;
 }
 .facebook:hover {
     background-image: url("../images/icon-facebook-blue.svg");
@@ -18,4 +83,27 @@
 }
 .footer .footer__ul li a:hover {
     color: var(--background-button);
+}
+.footer {
+    justify-content: space-between;
+    padding: 8rem 2rem;
+}
+.footer__ul {       
+    min-width: 20rem;
+    width: 20%;
+    max-width: 23rem;
+}
+@media  screen and (min-width: 1215px) {
+    .header .header__section {
+        justify-content: space-between;
+    }
+    .main .main__section--first {
+        justify-content: space-between;
+    }
+    .main .main__section--second {
+        justify-content: space-between;
+    }
+    .footer {
+        justify-content: space-between;
+    }
 }

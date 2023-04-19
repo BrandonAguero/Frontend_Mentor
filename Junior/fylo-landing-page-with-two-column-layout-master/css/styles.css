@@ -28,13 +28,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
 }
 .header .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    min-width: 32rem;
+    width: 100%;
+    padding: 2rem 4rem;
     margin-top: 2rem;
     margin-bottom: 12rem;
 }
@@ -59,22 +61,24 @@ body {
 .header .header__section {
     display: flex;
     flex-direction: column-reverse;
-    width: 90%;
+    min-width: 32rem;
+    width: 100%;
     align-items: center;
 }
 .header .header__section figure {
-    min-width: 28.8rem;
-    width: 100%;
-    max-width: 47rem;
-    margin-bottom: 2rem;
+    width: 90%;
+    margin-bottom: 6rem;
+    align-self: center;
+    max-width: 60rem;
 }
-.header .header__section figure img {
+.header .header__section figure img {   
     width: 100%;
 }
 .header .header__section div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 84.5%
 }
 .header .header__section div h1 {
     color: var(--color-heading);
@@ -140,37 +144,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 2rem 2rem;
 }
 .main .main__section--first figure {
     min-width: 28.8rem;
     width: 90%;
     max-width: 47rem;
-    margin-bottom: 2rem;
+    margin-bottom: 12rem;
 }
 .main .main__section--first figure img {
     width: 100%;
 }
-.main .main__section--first > h2 {
+.main .main__section--first article {
+    min-width: 28rem;
+    width: 90%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__section--first article > h2 {
     color: var(--color-heading);
     font-weight: bold;
     line-height: var(--size-heigth-heading);
     font-size: var(--font-size-heading);
     text-align: center;
-    min-width: 28rem;
-    width: 90%;
-    max-width: 34rem;
     margin-bottom: 2rem;
 }
-.main .main__section--first > p {
+.main .main__section--first article > p {
     color: var(--color-heading);
     font-size: var(--font-size-paragraph);
     font-weight: var(--size-height-paragraph);
-    min-width: 28.8rem;
-    width: 90%;
-    max-width: 50rem;
     margin-bottom: 2rem;
 }
-.main .main__section--first > a {
+.main .main__section--first article > a {
     color: var(--color-only-link);
     display: flex;
     height: 3rem;
@@ -180,9 +188,9 @@ body {
     align-items: center;
     text-decoration: none;
     border-bottom: 0.1rem solid var(--color-only-link);
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
-.main .main__section--first > a span {
+.main .main__section--first article > a span {
     background-image: url("../images/icon-arrow.svg");
     background-position: center;
     background-size: contain;
@@ -193,10 +201,10 @@ body {
     margin-left: 1rem;
 
 }
-.main .main__section--first > div{
+.main .main__section--first article > div{
     min-width: 28.8rem;
     width: 90%;
-    max-width: 50rem;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -205,18 +213,18 @@ body {
     box-shadow: 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.13);
     margin-bottom: 12rem;
 }
-.main .main__section--first > div img {
+.main .main__section--first article > div img {
     width: 1.5rem;
     height: 1.5rem;
     margin-bottom: 1rem;
 }
-.main .main__section--first > div > p {
+.main .main__section--first article > div > p {
     color: var(--color-paragraph);
     font-size: var(--font-size-paragraph);
     line-height: var(--size-height-paragraph);
     margin-bottom: 2rem;
 }
-.main .main__section--first > div span {
+.main .main__section--first article > div span {
     background-image: url("../images/avatar-testimonial.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -227,55 +235,61 @@ body {
     border-radius: 50%;
     margin-right: 1rem;
 }
-.main .main__section--first > div > div {
+.main .main__section--first article > div > div {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
-.main .main__section--first > div > div div :first-of-type {
+.main .main__section--first article > div > div div :first-of-type {
     font-weight: bold;
     font-size: var(--font-size-paragraph);
     margin-bottom: 0.5rem;
 }
-.main .main__section--first > div > div div :last-of-type {
+.main .main__section--first article > div > div div :last-of-type {
     font-size: 1rem;
 }
 .main .main__section--second {
+    padding: 2rem 0rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 5rem;
     align-items: center;
     background-color: var(--background-only-section);
 }
-.main .main__section--second h3 {
+.main .main__section--second .main__section--article {
+    min-width: 30rem;
+    width: 90%;
+    max-width: 68rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main__section--second .main__section--article h3 {
     color: var(--color-footer);
     font-size: var(--font-size-heading);
     line-height: var(--size-heigth-heading);
     font-weight: bold;
-    margin-top: 4rem;
     text-align: center;
-    min-width: 24rem;
-    width: 60%;
-    max-width: 27rem;
     margin-bottom: 2rem;
+    width: 90%;
+    max-width: 45rem;
 }
-.main .main__section--second > p {
+.main .main__section--second .main__section--article > p {
+    width: 90%;
     color: var(--color-footer);
     font-size: var(--font-size-paragraph);
     line-height: var(--size-height-paragraph);
     text-align: center;
-    min-width: 30rem;
-    width: 65%;
+    width: 90%;
     max-width: 45rem;
 }
 .main .main__section--second > form {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
     width: 90%;
-    margin-bottom: 6rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main .main__section--second > form :first-of-type {
     min-width: 26rem;
@@ -285,11 +299,12 @@ body {
     padding: 1rem;
     border: none;
     border-radius: 0.3rem;
+    margin-bottom: 2rem;
 }
 .main .main__section--second > form :first-of-type::placeholder {
     color: var(--color-placeholder);
 }
-.main .main__section--second > form :last-of-type {
+.main .main__section--second > form :nth-of-type(2) {
     min-width: 26rem;
     width: 80%;
     max-width: 37rem;
@@ -306,28 +321,31 @@ body {
 }
 .footer {
     background-color: var(--color-heading);
-    padding: 6rem 2rem 2rem 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 6rem 2rem;
 }
 .footer__ul {       
-    min-width: 24rem;
+    min-width: 25rem;
     width: 90%;
-    max-width: 27rem;
+    max-width: 25rem;
 }
 .footer__ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .footer__ul li span {
     font-size: var(--font-size-paragraph);
 }
+.footer__ul li .logo {
+    margin-bottom: 2rem;
+}
 .footer__ul--first li .icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 .footer .footer__ul--fourth {
     display: flex;
@@ -381,4 +399,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.wrong-email {
+    display: none;
 }

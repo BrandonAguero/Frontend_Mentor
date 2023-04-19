@@ -187,3 +187,6 @@ html {
 .main .main__section--fiveth {
     grid-area: fiveth;
 }
+.wrong-email {
+    display: none;
+}
