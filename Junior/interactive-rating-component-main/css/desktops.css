@@ -1,0 +1,14 @@
+.main .main__article .main__article--ul .ul__li {
+    cursor: pointer;
+}
+.main .main__article .main__article--ul .ul__li:hover {
+    background-color: var(--background-circles-activate);
+    color: var(--color-circles-activate);
+}
+.main .main__article .main__article--button {
+    cursor: pointer;
+}
+.main .main__article .main__article--button:hover {
+    background-color: var(--background-button-activate);
+    color: var(--color-button-activate);
+}
