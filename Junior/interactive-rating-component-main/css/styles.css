@@ -103,6 +103,9 @@ body {
 .main .main__article--second {
     align-items: center;
 }
+.main .main__article--second .main__article--p {
+    text-align: center;
+}
 .main .main__article--span {
     background-color: var(--background-circles-primary);
     color: var(--color-span);
